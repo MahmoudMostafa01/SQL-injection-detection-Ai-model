@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  sql_injection_app:
+    build:
+      context: .
+    volumes:
+      - .:/app  # Mount the current directory into the container
+    ports:
+      - "5000:5000"  # Map container port to host
+    environment:
+      - FLASK_ENV=development  # Set Flask environment to development
+    depends_on:
+      - mysql_db  # Ensure MySQL starts before the Flask app
+
+  mysql_db:
+    image: mysql:8.0  # Use MySQL 8.0 image
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword  # Set root password
+      - MYSQL_DATABASE=flask_db  # Create a database named flask_db
+      - MYSQL_USER=flask_user  # Create a user for the Flask app
+      - MYSQL_PASSWORD=flaskpassword  # Set user password
+    ports:
+      - "3306:3306"  # Expose MySQL port to the host
+    volumes:
+      - mysql_data:/var/lib/mysql  # Persist MySQL data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Mount the SQL script
+
+volumes:
+  mysql_data:  # Define a volume for MySQL data persistence
