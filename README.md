@@ -101,11 +101,12 @@ python benchmark.py
 🔹 This script evaluates the API’s speed, accuracy, and throughput on real-world test data.
 
 🛠 Technologies Used
+```
 🔹 Python (Flask, Sklearn, Pandas, Numpy) – Model development & API.
 🔹 Machine Learning (Random Forest, TF-IDF) – Feature extraction & classification.
 🔹 Docker – Containerized deployment.
 🔹 MySQL – Logging requests & responses.
-
+```
 📌 Conclusion
 This project provides a real-time SQL Injection detection system powered by machine learning. With high accuracy and fast performance, it can be easily integrated into web applications, firewalls, and security systems to prevent SQLi attacks.
 
@@ -116,5 +117,4 @@ Explore Deep Learning (LSTMs, Transformers) for enhanced text analysis.
 Implement real-time monitoring dashboards for API usage.
 
 
-💡 Developed by: Mahmoud Mostafa | ✉️ mahmoudmostafaworks@gmail.com  
-🔗 [GitHub](https://github.com/MahmoudMostafa01) | [LinkedIn](https://www.linkedin.com/in/mahmoud-abdelmaged) 🚀
+💡 Developed by: Mahmoud Mostafa | ✉️ mahmoudmostafaworks@gmail.com | 🔗 [GitHub](https://github.com/MahmoudMostafa01) | [LinkedIn](https://www.linkedin.com/in/mahmoud-abdelmaged) 🚀
