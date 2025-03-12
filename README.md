@@ -26,7 +26,7 @@ This project focuses on building an **AI-powered SQL Injection detection model**
 ---
 
 ## 🏗️ Project Structure  
-
+```
 📂 **SQLi-Detection**  
 ├── 📜 app.py # Flask API for SQLi detection
 ├── 📜 benchmark.py # Benchmarking script to evaluate the API
@@ -35,6 +35,7 @@ This project focuses on building an **AI-powered SQL Injection detection model**
 ├── 📜 sql_injection_model.pkl # Trained ML model
 ├── 📜 tfidf_vectorizer.pkl # Pretrained TF-IDF vectorizer
 ├── 📜 README.md # Project documentation
+```
 ---
 
 ## 📊 Machine Learning Pipeline  
